@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MyStore — Payment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html">MyStore</a></div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="payment.html">Payment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="pay-box">
+      <h1>Payment</h1>
+      <p>This is a front-end demo form — it does not process real payments.</p>
+
+      <form class="payment-form" action="#" method="post" onsubmit="return false;">
+        <label for="name">Name on Card</label>
+        <input id="name" name="name" type="text" placeholder="Full name" required />
+
+        <label for="card">Card Number</label>
+        <input id="card" name="card" type="text" inputmode="numeric" placeholder="1234 5678 9012 3456" required />
+
+        <div class="row">
+          <div class="col">
+            <label for="exp">Expiry</label>
+            <input id="exp" name="exp" type="month" required />
+          </div>
+          <div class="col">
+            <label for="cvv">CVV</label>
+            <input id="cvv" name="cvv" type="password" maxlength="4" placeholder="123" required />
+          </div>
+        </div>
+
+        <button type="submit" class="btn">Pay Now (Demo)</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year4">2025</span> MyStore — Demo</div>
+  </footer>
+</body>
+</html>
