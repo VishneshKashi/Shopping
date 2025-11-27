@@ -1,0 +1,57 @@
+/* Basic reset and layout */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html,body { height: 100%; font-family: Arial, Helvetica, sans-serif; color: #222; background: #f6f6f6; }
+.container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+
+/* Header / nav */
+.site-header { background: #111; color: #fff; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; }
+.brand a { color: #fff; text-decoration: none; font-size: 1.25rem; font-weight: 600; }
+.main-nav a { color: #ddd; margin-left: 16px; text-decoration: none; font-size: 0.95rem; }
+.main-nav a:hover { color: #fff; }
+
+/* Hero */
+.hero { padding: 48px 20px; background: #e9e9e9; text-align: center; border-bottom: 1px solid #ddd; }
+.hero h1 { margin-bottom: 10px; font-size: 2rem; }
+.hero p { margin-bottom: 16px; color: #333; }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.btn:hover { opacity: 0.9; }
+
+/* Features */
+.features { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 18px; margin: 22px 0 40px; }
+.feature { background: #fff; padding: 16px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.05); }
+
+/* Products grid */
+.products-grid h1 { margin-bottom: 14px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 18px; }
+.product-card { background: #fff; padding: 14px; border-radius: 8px; text-align: center; box-shadow: 0 1px 5px rgba(0,0,0,0.05); }
+.product-img { height: 120px; background: #f0f0f0; border-radius: 6px; display:flex; align-items:center; justify-content:center; color:#888; margin-bottom:12px; }
+.price { font-weight: 700; margin-bottom:8px; }
+
+/* Payment form */
+.pay-box { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 1px 6px rgba(0,0,0,0.05); margin: 20px 0; }
+.payment-form { display: grid; gap: 10px; max-width: 420px; margin-top: 12px; }
+.payment-form label { font-size: 0.9rem; color: #333; }
+.payment-form input { padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
+.row { display: flex; gap: 12px; }
+.col { flex: 1; }
+
+/* Footer */
+.site-footer { margin-top: 30px; padding: 18px 0; text-align: center; color: #666; font-size: 0.9rem; }
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .header-inner { flex-direction: column; gap: 10px; }
+  .main-nav a { margin-left: 8px; font-size: 0.9rem; }
+  .hero { padding: 30px 12px; }
+}
